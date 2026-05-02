@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Cookies – Imóvel Gestor</title>
+  <meta name="description" content="Como o Imóvel Gestor usa cookies e armazenamento local. Detalhes sobre auth-token, theme e ig_toasted_notifs.">
+  <meta property="og:title" content="Política de Cookies – Imóvel Gestor">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'><rect width='256' height='256' rx='48' fill='%230f172a'/><path d='M40 176l48-64 40 40 56-80 32 24-72 96-40-40-32 24z' fill='%2334d399'/></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="logo" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+          <rect width="256" height="256" rx="48" fill="#0f172a"/>
+          <path d="M40 176l48-64 40 40 56-80 32 24-72 96-40-40-32 24z" fill="#22c55e"/>
+        </svg>
+      </div>
+      <div>
+        <h1>Imóvel Gestor – Documentos Legais</h1>
+        <div class="muted">Última atualização: <span id="last-update">—</span></div>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <a href="index.html">Política de Privacidade</a>
+      <a href="terms.html">Termos de Uso</a>
+      <a href="lgpd.html">LGPD</a>
+      <a href="cookies.html" class="active">Cookies</a>
+    </nav>
+
+    <main class="card" role="main">
+      <h1 style="margin-top:0">Política de Cookies</h1>
+      <p class="lead">Esta página descreve os cookies e tecnologias semelhantes utilizados pelo Imóvel Gestor no site e dashboard web. No momento, não usamos cookies publicitários no site.</p>
+
+      <h2>1. Cookies essenciais</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Finalidade</th>
+            <th>Tipo</th>
+            <th>Duração</th>
+            <th>Acesso JS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>auth-token</code></td>
+            <td>Manter a sessão autenticada no painel web.</td>
+            <td>Essencial</td>
+            <td>Até 12 horas de inatividade ou expiração do token.</td>
+            <td>Não (HTTP-only)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>2. Armazenamento local (localStorage)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Chave</th>
+            <th>Finalidade</th>
+            <th>Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>theme</code></td>
+            <td>Salva preferência de tema (claro, escuro ou sistema).</td>
+            <td>Funcional</td>
+          </tr>
+          <tr>
+            <td><code>ig_toasted_notifs</code></td>
+            <td>Evita exibir repetidamente o mesmo aviso/notificação.</td>
+            <td>Funcional</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>3. Terceiros</h2>
+      <ul>
+        <li><strong>Google Sign-In:</strong> ao optar pelo login via Google, o provedor pode utilizar mecanismos próprios de armazenamento no navegador, fora do controle do Imóvel Gestor.</li>
+        <li><strong>Google AdMob:</strong> aplicável principalmente ao aplicativo móvel para usuários da versão gratuita. Detalhado na <a href="index.html">Política de Privacidade</a>.</li>
+      </ul>
+
+      <h2>4. Como gerenciar</h2>
+      <ul>
+        <li>O cookie <code>auth-token</code> é essencial para o funcionamento. Bloqueá-lo impede o login no painel web.</li>
+        <li>As chaves de <code>localStorage</code> podem ser removidas pelas configurações do navegador, sem quebrar funcionalidades essenciais.</li>
+        <li>A maioria dos navegadores permite controlar cookies pelas preferências de privacidade. Consulte a documentação do seu navegador.</li>
+      </ul>
+
+      <h2>5. Mudanças no futuro</h2>
+      <p>Caso futuramente sejam adotados cookies de analytics, marketing ou publicidade no site, esta página será atualizada e um banner de consentimento será apresentado, com opções de aceitar, rejeitar e gerenciar preferências.</p>
+
+      <h2>6. Contato</h2>
+      <p>Dúvidas sobre cookies podem ser enviadas para <a href="mailto:elton.melo.santos@gmail.com">elton.melo.santos@gmail.com</a>.</p>
+    </main>
+
+    <footer>
+      <p>© <span id="copy-year"></span> Imóvel Gestor – Desenvolvido por Elton Santos – Fortaleza/CE, Brasil</p>
+      <p class="muted">Contato: <a href="mailto:elton.melo.santos@gmail.com">elton.melo.santos@gmail.com</a></p>
+    </footer>
+  </div>
+  <script src="legal.js"></script>
+</body>
+</html>

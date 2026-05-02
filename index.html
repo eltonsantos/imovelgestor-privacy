@@ -4,40 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Política de Privacidade – Imóvel Gestor</title>
-  <meta name="description" content="Política de Privacidade do aplicativo Imóvel Gestor. Transparência sobre coleta, uso e proteção de dados.">
+  <meta name="description" content="Política de Privacidade do Imóvel Gestor: dados tratados, finalidades, bases legais, compartilhamento, retenção, segurança e direitos do titular conforme a LGPD.">
   <meta property="og:title" content="Política de Privacidade – Imóvel Gestor">
-  <meta property="og:description" content="Política de Privacidade do aplicativo Imóvel Gestor">
+  <meta property="og:description" content="Política de Privacidade do Imóvel Gestor – LGPD, dados, direitos do titular.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0f172a">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'><rect width='256' height='256' rx='48' fill='%230f172a'/><path d='M40 176l48-64 40 40 56-80 32 24-72 96-40-40-32 24z' fill='%2334d399'/></svg>">
-  <style>
-    :root{
-      --bg: #0b0f1a;
-      --panel: #0f172a;
-      --text: #e5e7eb;
-      --muted:#9ca3af;
-      --accent:#22c55e;
-      --card:#111827;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#0d1324);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
-    .wrap{max-width:860px;margin:0 auto;padding:40px 20px}
-    header{display:flex;align-items:center;gap:12px;margin-bottom:24px}
-    .logo{width:36px;height:36px;display:grid;place-items:center;background:#0f172a;border-radius:10px}
-    .logo svg{width:24px;height:24px}
-    h1{font-size:clamp(1.6rem,3vw,2rem);margin:0}
-    .card{background:rgba(17,24,39,.7);backdrop-filter:saturate(140%) blur(6px);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:24px}
-    h2{font-size:1.1rem;margin-top:1.4rem;color:#cbd5e1}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .muted{color:var(--muted)}
-    footer{margin-top:32px;color:#94a3b8;font-size:.9rem}
-    code{background:#0f172a;padding:.1rem .35rem;border-radius:6px}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="wrap">
-    <header>
+    <header class="site">
       <div class="logo" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
           <rect width="256" height="256" rx="48" fill="#0f172a"/>
@@ -45,44 +22,152 @@
         </svg>
       </div>
       <div>
-        <h1>Política de Privacidade – Imóvel Gestor</h1>
-        <div class="muted">Última atualização: 30/01/2026</div>
+        <h1>Imóvel Gestor – Documentos Legais</h1>
+        <div class="muted">Última atualização: <span id="last-update">—</span></div>
       </div>
     </header>
 
+    <nav class="nav">
+      <a href="index.html" class="active">Política de Privacidade</a>
+      <a href="terms.html">Termos de Uso</a>
+      <a href="lgpd.html">LGPD</a>
+      <a href="cookies.html">Cookies</a>
+    </nav>
+
     <main class="card" role="main">
-      <p>O Imóvel Gestor respeita a sua privacidade e está comprometido em proteger os dados pessoais que você nos fornece.</p>
+      <h1 style="margin-top:0">Política de Privacidade</h1>
+      <p class="lead">Esta Política de Privacidade descreve como o aplicativo e site <strong>Imóvel Gestor</strong> coletam, utilizam, compartilham e protegem dados pessoais. O Imóvel Gestor busca transparência e adequação aos princípios da Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD).</p>
 
-      <h2>1. Coleta de Informações</h2>
-      <p>Podemos coletar dados como nome, e-mail e informações sobre investimentos, exclusivamente para funcionamento do aplicativo.</p>
-
-      <h2>2. Uso das Informações</h2>
+      <h2>1. Identificação do controlador</h2>
       <ul>
-        <li>Gerenciar sua conta e preferências;</li>
-        <li>Exibir dados financeiros e gráficos;</li>
-        <li>Melhorar a experiência no aplicativo.</li>
+        <li><strong>Aplicativo/Site:</strong> Imóvel Gestor</li>
+        <li><strong>Responsável (controlador):</strong> Elton Santos</li>
+        <li><strong>Localização:</strong> Fortaleza/CE, Brasil</li>
+        <li><strong>Contato:</strong> <a href="mailto:elton.melo.santos@gmail.com">elton.melo.santos@gmail.com</a></li>
       </ul>
 
-      <h2>3. Compartilhamento de Dados</h2>
-      <p>Não compartilhamos seus dados pessoais com terceiros, exceto quando exigido por lei.</p>
+      <h2>2. Dados que tratamos</h2>
 
-      <h2>4. Segurança</h2>
-      <p>Adotamos medidas de segurança compatíveis com as melhores práticas do mercado para proteger suas informações.</p>
+      <h3>2.1. Dados de cadastro e autenticação</h3>
+      <ul>
+        <li>Nome, e-mail, foto/avatar.</li>
+        <li>Senha armazenada em formato criptografado (hash bcrypt).</li>
+        <li>Identificador Google e dados de perfil quando o login é feito via Google Sign-In.</li>
+        <li>Função/perfil do usuário (gestor, assistente, administrador).</li>
+      </ul>
 
-      <h2>5. Direitos do Usuário</h2>
-      <p>Você pode solicitar a atualização ou exclusão de seus dados a qualquer momento pelo e-mail <a href="mailto:suporte@imovelgestor.com">suporte@imovelgestor.com</a>.</p>
+      <h3>2.2. Dados de gestão imobiliária</h3>
+      <ul>
+        <li>Imóveis: nome, tipo, endereço, país, moeda, status, observações, imagens.</li>
+        <li>Contratos e inquilinos: nome, e-mail, telefone, datas de início/fim, valor de aluguel, arquivos/documentos do contrato, observações.</li>
+        <li>Manutenções: título, descrição, prioridade, custo, datas, prestador vinculado.</li>
+        <li>Prestadores: nome, telefone, e-mail, tipo de serviço, observações.</li>
+        <li>Despesas: categoria, descrição, valor, datas de vencimento e pagamento.</li>
+        <li>Vistorias: data, descrição, checklist, notas, possíveis fotos/arquivos.</li>
+      </ul>
 
-      <h2>6. Alterações nesta Política</h2>
-      <p>Podemos atualizar esta política periodicamente. As alterações serão publicadas nesta página.</p>
+      <h3>2.3. Dados de suporte e comunicação</h3>
+      <ul>
+        <li>Nome, e-mail e mensagens enviadas pelo formulário de suporte.</li>
+        <li>Eventos de notificação push (token Expo Push, status de leitura).</li>
+      </ul>
 
-      <h2>Contato</h2>
-      <p>Em caso de dúvidas, entre em contato pelo e-mail <a href="mailto:suporte@imovelgestor.com">suporte@imovelgestor.com</a>.</p>
+      <h3>2.4. Dados de plano e assinatura</h3>
+      <ul>
+        <li>Status Pro, validade da assinatura.</li>
+        <li>Eventos de assinatura/cancelamento processados pela RevenueCat.</li>
+      </ul>
+
+      <h3>2.5. Dados técnicos e de auditoria</h3>
+      <ul>
+        <li>Endereço IP, logs de acesso, dispositivo, sistema operacional, navegador.</li>
+        <li>Registros de auditoria: ator, e-mail do ator, ação executada, entidade alterada, metadados.</li>
+        <li>Cookies essenciais e armazenamento local (ver <a href="cookies.html">Política de Cookies</a>).</li>
+      </ul>
+
+      <h2>3. Finalidades do tratamento</h2>
+      <ul>
+        <li>Criar, autenticar e manter contas de usuário.</li>
+        <li>Permitir gestão de imóveis, contratos, inquilinos, prestadores, despesas, manutenções e vistorias.</li>
+        <li>Possibilitar upload e armazenamento de arquivos e fotos.</li>
+        <li>Enviar notificações relevantes ao funcionamento do serviço.</li>
+        <li>Prover suporte técnico e atendimento.</li>
+        <li>Controlar planos gratuito e Pro.</li>
+        <li>Garantir segurança, prevenção a fraudes, auditoria e melhoria do serviço.</li>
+        <li>Cumprir obrigações legais e regulatórias quando aplicáveis.</li>
+      </ul>
+
+      <h2>4. Bases legais</h2>
+      <p>O tratamento dos dados é amparado nas seguintes bases legais previstas na LGPD:</p>
+      <ul>
+        <li><strong>Execução de contrato</strong> – prestação do serviço solicitado pelo titular.</li>
+        <li><strong>Legítimo interesse</strong> – segurança, prevenção a fraudes, auditoria e melhoria contínua, sempre respeitando direitos e liberdades fundamentais.</li>
+        <li><strong>Consentimento</strong> – quando aplicável, especialmente para notificações push e comunicações não essenciais.</li>
+        <li><strong>Cumprimento de obrigação legal/regulatória</strong> – quando exigido por lei.</li>
+        <li><strong>Exercício regular de direitos</strong> – em processos judiciais, administrativos ou arbitrais.</li>
+      </ul>
+
+      <h2>5. Compartilhamento com terceiros</h2>
+      <p>Não vendemos dados pessoais. Para operação do serviço, utilizamos operadores e fornecedores que processam dados em nosso nome, sob contratos e medidas de segurança adequadas:</p>
+      <ul>
+        <li><strong>Supabase / PostgreSQL</strong> – banco de dados e armazenamento de arquivos.</li>
+        <li><strong>Vercel</strong> – hospedagem da aplicação web.</li>
+        <li><strong>Google Sign-In</strong> – autenticação opcional via conta Google.</li>
+        <li><strong>Expo Push Notifications</strong> – envio de notificações ao aplicativo móvel.</li>
+        <li><strong>RevenueCat</strong> – gestão de assinaturas Pro nas lojas.</li>
+        <li><strong>Google AdMob</strong> – exibição de anúncios no aplicativo móvel para usuários da versão gratuita.</li>
+        <li><strong>SendGrid</strong> – envio de e-mails transacionais (recuperação de senha, confirmações).</li>
+      </ul>
+      <p>Esses operadores podem tratar dados em servidores localizados fora do Brasil. Adotamos medidas para que esse tratamento esteja em conformidade com a LGPD.</p>
+
+      <h2>6. Retenção e exclusão</h2>
+      <ul>
+        <li>Dados da conta são mantidos enquanto a conta estiver ativa e enquanto forem necessários à prestação do serviço.</li>
+        <li>Dados de imóveis, contratos, vistorias e despesas permanecem disponíveis enquanto o usuário utilizar o serviço.</li>
+        <li>Logs e registros de auditoria podem ser mantidos por períodos adicionais para fins de segurança e defesa de direitos.</li>
+        <li>Pedidos de exclusão são analisados e atendidos, podendo haver retenção mínima exigida por lei, segurança, prevenção a fraude ou exercício regular de direitos.</li>
+        <li>Backups podem manter cópias por período técnico limitado, sendo eliminadas conforme rotação programada.</li>
+      </ul>
+
+      <h2>7. Direitos do titular</h2>
+      <p>Conforme a LGPD, o titular pode, a qualquer momento, solicitar ao controlador:</p>
+      <ul>
+        <li>Confirmação da existência de tratamento.</li>
+        <li>Acesso aos dados.</li>
+        <li>Correção de dados incompletos, inexatos ou desatualizados.</li>
+        <li>Anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos.</li>
+        <li>Portabilidade quando aplicável.</li>
+        <li>Eliminação dos dados tratados com consentimento.</li>
+        <li>Informação sobre entidades com as quais foi feito compartilhamento.</li>
+        <li>Revogação de consentimento.</li>
+        <li>Revisão de decisões automatizadas, quando aplicável.</li>
+      </ul>
+      <p>Para exercer esses direitos, envie e-mail para <a href="mailto:elton.melo.santos@gmail.com">elton.melo.santos@gmail.com</a>. Caso entenda que sua solicitação não foi adequadamente atendida, é possível apresentar petição à ANPD (Autoridade Nacional de Proteção de Dados).</p>
+
+      <h2>8. Crianças e adolescentes</h2>
+      <p>O Imóvel Gestor é destinado a maiores de 18 anos para gestão de imóveis. Não direcionamos o serviço a crianças e não coletamos intencionalmente dados de menores.</p>
+
+      <h2>9. Segurança</h2>
+      <ul>
+        <li>Senhas armazenadas com hash bcrypt.</li>
+        <li>Cookie de autenticação <em>HTTP-only</em> e <em>secure</em> em produção.</li>
+        <li>Token de sessão armazenado com segurança no aplicativo móvel via SecureStore.</li>
+        <li>Sessão expira automaticamente após 12 horas de inatividade.</li>
+        <li>Controle de acesso por papéis: gestor, assistente, administrador.</li>
+        <li>Escopo de dados isolado por gestor (multi-tenant lógico).</li>
+        <li>Validação de tipo e tamanho em uploads.</li>
+        <li>Comunicação cliente-servidor via HTTPS.</li>
+      </ul>
+
+      <h2>10. Alterações desta política</h2>
+      <p>Podemos atualizar esta política. Mudanças relevantes serão comunicadas no aplicativo, no site ou por e-mail. A versão vigente sempre estará disponível nesta página, com indicação de data da última atualização.</p>
     </main>
 
     <footer>
-      <p>© 2026 Imóvel Gestor. Todos os direitos reservados.</p>
-      <p class="muted">Esta página pode ser hospedada no GitHub Pages, Netlify ou em outro provedor de hospedagem estática.</p>
+      <p>© <span id="copy-year"></span> Imóvel Gestor – Desenvolvido por Elton Santos – Fortaleza/CE, Brasil</p>
+      <p class="muted">Contato: <a href="mailto:elton.melo.santos@gmail.com">elton.melo.santos@gmail.com</a></p>
     </footer>
   </div>
+  <script src="legal.js"></script>
 </body>
 </html>
