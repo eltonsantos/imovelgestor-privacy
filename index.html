@@ -85,6 +85,13 @@
         <li>Cookies essenciais e armazenamento local (ver <a href="cookies.html">Política de Cookies</a>).</li>
       </ul>
 
+      <h3>2.6. Dados de publicidade</h3>
+      <ul>
+        <li>Identificador de publicidade do dispositivo (IDFA no iOS, Advertising ID no Android), quando autorizado pelo usuário.</li>
+        <li>Interações com os anúncios exibidos: exibições, cliques e recompensas concedidas.</li>
+        <li>Informações técnicas enviadas ao Google AdMob na requisição do anúncio, como tipo de dispositivo, sistema operacional, idioma e endereço IP.</li>
+      </ul>
+
       <h2>3. Finalidades do tratamento</h2>
       <ul>
         <li>Criar, autenticar e manter contas de usuário.</li>
@@ -93,6 +100,7 @@
         <li>Enviar notificações relevantes ao funcionamento do serviço.</li>
         <li>Prover suporte técnico e atendimento.</li>
         <li>Controlar planos gratuito e Pro.</li>
+        <li>Exibir anúncios no plano gratuito e medir seu desempenho.</li>
         <li>Garantir segurança, prevenção a fraudes, auditoria e melhoria do serviço.</li>
         <li>Cumprir obrigações legais e regulatórias quando aplicáveis.</li>
       </ul>
@@ -102,7 +110,7 @@
       <ul>
         <li><strong>Execução de contrato</strong> – prestação do serviço solicitado pelo titular.</li>
         <li><strong>Legítimo interesse</strong> – segurança, prevenção a fraudes, auditoria e melhoria contínua, sempre respeitando direitos e liberdades fundamentais.</li>
-        <li><strong>Consentimento</strong> – quando aplicável, especialmente para notificações push e comunicações não essenciais.</li>
+        <li><strong>Consentimento</strong> – quando aplicável, especialmente para notificações push, comunicações não essenciais e anúncios personalizados.</li>
         <li><strong>Cumprimento de obrigação legal/regulatória</strong> – quando exigido por lei.</li>
         <li><strong>Exercício regular de direitos</strong> – em processos judiciais, administrativos ou arbitrais.</li>
       </ul>
@@ -120,7 +128,15 @@
       </ul>
       <p>Esses operadores podem tratar dados em servidores localizados fora do Brasil. Adotamos medidas para que esse tratamento esteja em conformidade com a LGPD.</p>
 
-      <h2>6. Retenção e exclusão</h2>
+      <h2>6. Publicidade e rastreamento</h2>
+      <p>O aplicativo móvel exibe anúncios do Google AdMob para usuários do plano gratuito. Assinantes do plano Pro não visualizam anúncios.</p>
+      <p>Para exibir anúncios personalizados, o AdMob utiliza o identificador de publicidade do dispositivo e pode combinar esses dados com informações de terceiros para fins publicitários. Segundo a definição da Apple, esse uso é caracterizado como rastreamento e envolve dados como e-mail, nome e identificador de dispositivo.</p>
+      <p>No iOS, o aplicativo solicita autorização por meio da App Tracking Transparency (ATT) antes de qualquer uso do identificador de publicidade para essa finalidade. A permissão é pedida no primeiro uso do aplicativo e pode ser alterada a qualquer momento em <em>Ajustes &rarr; Privacidade e Segurança &rarr; Rastreamento</em>.</p>
+      <p>Caso a autorização não seja concedida, o aplicativo passa a requisitar apenas anúncios não personalizados, sem uso do identificador para rastreamento. Nenhuma funcionalidade é perdida nessa escolha.</p>
+      <p>No Android, o controle equivalente está em <em>Configurações &rarr; Google &rarr; Anúncios</em>, onde é possível desativar a personalização de anúncios ou redefinir o identificador.</p>
+      <p>O tratamento descrito nesta seção tem como base legal o consentimento do titular, revogável a qualquer momento pelos caminhos indicados acima. Informações adicionais estão nas <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">políticas de publicidade do Google</a>.</p>
+
+      <h2>7. Retenção e exclusão</h2>
       <ul>
         <li>Dados da conta são mantidos enquanto a conta estiver ativa e enquanto forem necessários à prestação do serviço.</li>
         <li>Dados de imóveis, contratos, vistorias e despesas permanecem disponíveis enquanto o usuário utilizar o serviço.</li>
@@ -129,7 +145,7 @@
         <li>Backups podem manter cópias por período técnico limitado, sendo eliminadas conforme rotação programada.</li>
       </ul>
 
-      <h2>7. Direitos do titular</h2>
+      <h2>8. Direitos do titular</h2>
       <p>Conforme a LGPD, o titular pode, a qualquer momento, solicitar ao controlador:</p>
       <ul>
         <li>Confirmação da existência de tratamento.</li>
@@ -144,10 +160,10 @@
       </ul>
       <p>Para exercer esses direitos, envie e-mail para <a href="mailto:elton.melo.santos@gmail.com">elton.melo.santos@gmail.com</a>. Caso entenda que sua solicitação não foi adequadamente atendida, é possível apresentar petição à ANPD (Autoridade Nacional de Proteção de Dados).</p>
 
-      <h2>8. Crianças e adolescentes</h2>
+      <h2>9. Crianças e adolescentes</h2>
       <p>O Imóvel Gestor é destinado a maiores de 18 anos para gestão de imóveis. Não direcionamos o serviço a crianças e não coletamos intencionalmente dados de menores.</p>
 
-      <h2>9. Segurança</h2>
+      <h2>10. Segurança</h2>
       <ul>
         <li>Senhas armazenadas com hash bcrypt.</li>
         <li>Cookie de autenticação <em>HTTP-only</em> e <em>secure</em> em produção.</li>
@@ -159,7 +175,7 @@
         <li>Comunicação cliente-servidor via HTTPS.</li>
       </ul>
 
-      <h2>10. Alterações desta política</h2>
+      <h2>11. Alterações desta política</h2>
       <p>Podemos atualizar esta política. Mudanças relevantes serão comunicadas no aplicativo, no site ou por e-mail. A versão vigente sempre estará disponível nesta página, com indicação de data da última atualização.</p>
     </main>
 
