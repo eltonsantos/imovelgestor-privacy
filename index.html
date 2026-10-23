@@ -125,6 +125,7 @@
         <li><strong>RevenueCat</strong> – gestão de assinaturas Pro nas lojas.</li>
         <li><strong>Google AdMob</strong> – exibição de anúncios no aplicativo móvel para usuários da versão gratuita.</li>
         <li><strong>Resend</strong> – envio de e-mails transacionais (recuperação de senha, confirmações).</li>
+        <li><strong>Autoridade Tributária e Aduaneira (Portugal)</strong> – somente quando o assinante do plano Max pede a emissão de um recibo de renda eletrónico: enviamos os dados desse recibo (NIF do senhorio e dos inquilinos, número do contrato, período e valor) e as credenciais do subutilizador do Portal das Finanças informadas na hora. A senha segue cifrada diretamente para a AT e não é guardada.</li>
       </ul>
       <p>Esses operadores podem tratar dados em servidores localizados fora do Brasil. Adotamos medidas para que esse tratamento esteja em conformidade com a LGPD.</p>
 
@@ -168,7 +169,7 @@
         <li>Senhas armazenadas com hash bcrypt.</li>
         <li>Cookie de autenticação <em>HTTP-only</em> e <em>secure</em> em produção.</li>
         <li>Token de sessão armazenado com segurança no aplicativo móvel via SecureStore.</li>
-        <li>Sessão expira automaticamente após 12 horas de inatividade.</li>
+        <li>Sessão expira automaticamente após 8 horas de inatividade.</li>
         <li>Controle de acesso por papéis: gestor, assistente, administrador.</li>
         <li>Escopo de dados isolado por gestor (multi-tenant lógico).</li>
         <li>Validação de tipo e tamanho em uploads.</li>
